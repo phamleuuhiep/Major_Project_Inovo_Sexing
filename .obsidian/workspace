@@ -1,0 +1,136 @@
+{
+  "main": {
+    "id": "9943766945ae251c",
+    "type": "split",
+    "children": [
+      {
+        "id": "a11711e0b6af9de4",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "In-ovo sexing.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "64935fb08221feb6",
+    "type": "split",
+    "children": [
+      {
+        "id": "ad56a31541c66b45",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "544bbcb7fe8e6396",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f22556dd37173a4f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "48678c93c0ca9c42",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "30def94f63b964b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "832645f52e06c86c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "583f4c00dbdee3ed",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "In-ovo sexing.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6c6b366436dec042",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "In-ovo sexing.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "813375bd0620b388",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "37011fa035e8374b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "In-ovo sexing.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "544bbcb7fe8e6396",
+  "lastOpenFiles": [
+    "2025-09-25.md",
+    "In-ovo sexing.md"
+  ]
+}
