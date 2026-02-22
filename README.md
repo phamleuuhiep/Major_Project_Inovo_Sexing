@@ -1,70 +1,65 @@
-🐣 Inovo Sexing Project – Pretest Notebook
-1. Overview
+# 🐣 Inovo Sexing Project – Pretest Notebook
 
-This repository contains the pretest and feature engineering notebook for the Inovo Sexing project.
+## 1. Overview
+
+This repository contains the **pretest and feature engineering notebook** for the Inovo Sexing project.
 
 The purpose of this phase is to:
 
-Validate dataset integrity
+- Validate dataset integrity  
+- Perform preprocessing and reconstruction (if necessary)  
+- Extract core **shape-based morphological features**  
+- Conduct sanity checks and outlier filtering  
+- Prepare a structured dataset for baseline modeling  
 
-Perform preprocessing and reconstruction (if necessary)
+This notebook represents the **data validation and feature extraction stage** before model development.
 
-Extract core shape-based morphological features
+---
 
-Conduct sanity checks and outlier filtering
+## 2. Scope of This Notebook
 
-Prepare a structured dataset for baseline modeling
-
-This notebook represents the data validation and feature extraction stage before model development.
-
-2. Scope of This Notebook
-✔ Shape Feature Finalization
+### ✔ Shape Feature Finalization
 
 The following geometric descriptors are extracted:
 
-Area
-
-Major Axis Length
-
-Minor Axis Length
-
-Aspect Ratio
-
-Eccentricity
-
-Shape Index (SI)
+- **Area**
+- **Major Axis Length**
+- **Minor Axis Length**
+- **Aspect Ratio**
+- **Eccentricity**
+- **Shape Index (SI)**
 
 These features serve as interpretable morphological predictors.
 
-✔ Data Quality & Validation
+---
+
+### ✔ Data Quality & Validation
 
 The notebook includes:
 
-Dataset length verification
+- Dataset length verification  
+- Label merging validation  
+- Feature completeness checks  
+- Outlier detection  
+- Reconstruction rate analysis  
+- Sanity checks on segmentation output  
 
-Label merging validation
+---
 
-Feature completeness checks
+### ❌ Not Included in This Phase
 
-Outlier detection
+- Spectral features  
+- Deep learning models  
+- Advanced augmentation  
+- Hyperparameter optimization  
 
-Reconstruction rate analysis
+This stage focuses purely on **clean feature engineering and structural reliability**.
 
-Sanity checks on segmentation output
+---
 
-❌ Not Included in This Phase
+## 3. Pipeline Structure
 
-Spectral features
-
-Deep learning models
-
-Advanced augmentation
-
-Hyperparameter optimization
-
-This stage focuses purely on clean feature engineering and structural reliability.
-
-3. Pipeline Structure
+```
 Raw Data
    ↓
 Preprocessing
@@ -76,100 +71,107 @@ Feature Engineering
 Sanity Check & Cleaning
    ↓
 Final Structured Dataset
-4. Feature Description
-Feature	Description
-Area	Pixel area of segmented region
-Major Axis Length	Longest axis of fitted ellipse
-Minor Axis Length	Shortest axis of fitted ellipse
-Aspect Ratio	Major Axis / Minor Axis
-Eccentricity	Ellipse eccentricity (0–1)
-Shape Index (SI)	Curvature-based shape descriptor
-5. Validation Strategy
+```
+
+---
+
+## 4. Feature Description
+
+| Feature | Description |
+|----------|-------------|
+| Area | Pixel area of segmented region |
+| Major Axis Length | Longest axis of fitted ellipse |
+| Minor Axis Length | Shortest axis of fitted ellipse |
+| Aspect Ratio | Major Axis / Minor Axis |
+| Eccentricity | Ellipse eccentricity (0–1) |
+| Shape Index (SI) | Curvature-based shape descriptor |
+
+---
+
+## 5. Validation Strategy
 
 The notebook ensures:
 
-Correct sample count (e.g., 257 samples)
-
-No mismatch between labels and features
-
-No empty feature vectors
-
-Logical value ranges (e.g., aspect ratio ≥ 1)
-
-Removal of extreme or corrupted samples
+- Correct sample count (e.g., 257 samples)  
+- No mismatch between labels and features  
+- No empty feature vectors  
+- Logical value ranges (e.g., aspect ratio ≥ 1)  
+- Removal of extreme or corrupted samples  
 
 Statistical summaries are generated before exporting the cleaned dataset.
 
-6. Output Artifacts
+---
+
+## 6. Output Artifacts
 
 The notebook produces:
 
-Cleaned feature dataframe
+- Cleaned feature dataframe  
+- Summary statistics  
+- Reconstruction statistics  
+- Diagnostic logs  
+- Optional exported CSV for modeling  
 
-Summary statistics
+---
 
-Reconstruction statistics
+## 7. Environment Requirements
 
-Diagnostic logs
+### Python Version
+- Python 3.9+
 
-Optional exported CSV for modeling
+### Core Libraries
 
-7. Environment Requirements
-Python Version
-
-Python 3.9+
-
-Core Libraries
+```
 numpy
 pandas
 matplotlib
 scikit-learn
 opencv-python
 scikit-image
+```
 
 Install dependencies:
 
+```bash
 pip install -r requirements.txt
-8. Next Phase Roadmap
+```
+
+---
+
+## 8. Next Phase Roadmap
 
 After completing this notebook:
 
-Exploratory Data Analysis (EDA)
+1. Exploratory Data Analysis (EDA)
+2. Feature normalization / scaling
+3. Train–test split
+4. Baseline models:
+   - Logistic Regression
+   - Support Vector Machine (SVM)
+   - Random Forest
+5. Cross-validation
+6. Feature importance analysis
+7. Performance comparison
 
-Feature normalization / scaling
+---
 
-Train–test split
-
-Baseline models:
-
-Logistic Regression
-
-Support Vector Machine (SVM)
-
-Random Forest
-
-Cross-validation
-
-Feature importance analysis
-
-Performance comparison
-
-9. Design Philosophy
+## 9. Design Philosophy
 
 This pretest stage prioritizes:
 
-Interpretability
+- Interpretability  
+- Reproducibility  
+- Explicit validation  
+- Clean and explainable feature pipeline  
 
-Reproducibility
+The goal is to ensure the dataset is **structurally sound and statistically reliable** before moving to modeling and optimization.
 
-Explicit validation
+---
 
-Clean and explainable feature pipeline
+## 10. Status
 
-The goal is to ensure the dataset is structurally sound and statistically reliable before moving to modeling and optimization.
+✔ Feature extraction complete  
+✔ Sanity checks implemented  
+🔜 Ready for EDA and baseline modeling  
 
-10. Status
-
-✔ Feature extraction complete
-✔ Sanity checks implemented
-🔜 Ready for EDA and baseline modeling
+---
